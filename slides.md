@@ -5,12 +5,8 @@ info: A presentation giving a critical review of MCP servers.
 class: text-center
 drawings:
   persist: false
-# slide transition: https://sli.dev/guide/animations.html#slide-transitions
 transition: slide-left
-# enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
-# duration of the presentation
-duration: 35min
 ---
 
 # MCP Reality Check
@@ -21,7 +17,7 @@ Sorry, this presentation isn't going to go with all the hype.
   <!-- <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="slidev-icon-btn">
     <carbon:edit />
   </button> -->
-  <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn">
+  <a href="https://github.com/andrewgremlich/mcp-hype" target="_blank" class="slidev-icon-btn">
     <carbon:logo-github />
   </a>
 </div>
@@ -33,7 +29,7 @@ Sorry, this presentation isn't going to go with all the hype.
 -->
 
 ---
-transition: slid-up
+transition: slide-up
 ---
 
 <v-clicks>
@@ -58,7 +54,7 @@ transition: slid-up
 -->
 
 ---
-transition: slide-up
+transition: slide-left
 ---
 
 <v-clicks>
@@ -89,7 +85,7 @@ hide: false
 ---
 
 ---
-tranistion: slide-up
+tranistion: slide-left
 layout: statement
 ---
 
@@ -108,7 +104,7 @@ These things can be useful!
 -->
 
 ---
-transition: slide-over
+transition: slide-up
 ---
 
 # MCP Technology
@@ -134,7 +130,278 @@ transition: slide-over
 - MCP depends on LLM.
 -->
 
+
+---
+transition: slide-up
+layout: statement
+---
+
+This seems like a fancy way to talk to an LLM...
+
+<style>
+  p {
+    font-size: 40px;
+  }
+</style>
+
+<!--
+- Chat should be complementary, not primary
+- Too many features = poor UX
+- AI winners have focused solutions
+-->
+
+
 ---
 src: ./pages/dont-make-me-think.md
 hide: false
 ---
+
+---
+transition: slide-left
+---
+
+# Not So User Friendly
+
+<v-clicks>
+
+- Chatbot as primary interface = guessing game
+- Frustrated users = divested users
+- Traditional interfaces provide clear cues
+- Why replace what already works?
+
+</v-clicks>
+
+<style>
+  li {
+    font-size: 32px;
+  }
+</style>
+
+<!--
+- Software engineers think chatbots replace traditional UI
+- Shows limited UX knowledge
+- Users need obvious features, not hidden ones
+- Chatbots make users guess what's possible
+-->
+
+---
+transition: slide-left
+---
+
+# The Interface Paradox
+
+<v-clicks>
+
+- Chatbot needs to cue users about features
+- This defeats the purpose of "no traditional UI"
+- If you need traditional cues... why not traditional UI?
+- Conduct UX research first!
+
+</v-clicks>
+
+<style>
+  li {
+    font-size: 30px;
+  }
+</style>
+
+<!--
+- Chatbots still need to explain their capabilities
+- Ends up being more work than traditional interface
+- Research should drive design decisions
+-->
+
+---
+transition: slide-left
+---
+
+# Power Users vs Everyone Else
+
+<v-clicks>
+
+- Even power users only use 10-20% of available features
+- Microsoft Word: hundreds of features, most widely unused
+- Google Docs wins with essential feature set
+- Usability > Feature count
+
+</v-clicks>
+
+<style>
+  li {
+    font-size: 30px;
+  }
+</style>
+
+<!--
+- Personal anecdotes about feature usage
+- More features doesn't mean better experience
+- Simplicity and reliability matter more
+-->
+
+---
+transition: slide-up
+---
+
+# LLM Reality Check
+
+<v-clicks>
+
+- Productivity boost is context dependent
+- Non-deterministic results
+- Too many demos require negotiating with the chatbot
+- Demos should encourage use, not caution
+
+</v-clicks>
+
+<style>
+  li {
+    font-size: 32px;
+  }
+</style>
+
+<!--
+- Presented at UtahJS about LLM limitations
+- Context matters for effectiveness
+- Bad demos create expectation mismatch
+-->
+
+---
+transition: slide-left
+---
+
+# The Context Engineering Shift
+
+<v-clicks>
+
+- Anthropic: "Prompt engineering isn't that useful"
+- Now we need "context engineering"
+- Sounds familiar... like rubber duck programming?
+- Give AI context = talk to rubber duck?
+
+</v-clicks>
+
+<style>
+  li {
+    font-size: 30px;
+  }
+</style>
+
+<!--
+- Industry pivoting on advice
+- Context engineering = explaining problem thoroughly
+- Good engineers might solve it themselves with that context
+-->
+
+---
+transition: slide-left
+---
+
+# The Duck Programming Problem
+
+<v-clicks>
+
+- At sufficient context, couldn't you solve it yourself?
+- LLMs still hallucinate (non-deterministic)
+- Can't reliably trust output
+- Need smaller bursts, not sweeping changes
+
+</v-clicks>
+
+<style>
+  li {
+    font-size: 30px;
+  }
+</style>
+
+<!--
+- If you explain the problem fully, you're halfway there
+- Hallucination risk remains
+- Trust issues require careful, incremental use
+-->
+
+---
+transition: slide-up
+---
+
+# A Different Path Forward
+
+<v-clicks>
+
+- MCPs without chatbot interface?
+- Simple ML program accessing MCP servers
+- Competes with GraphQL and REST APIs
+- Why not just use a button? 😱
+
+</v-clicks>
+
+<style>
+  li {
+    font-size: 32px;
+  }
+</style>
+
+<!--
+- Maybe the interface is the problem
+- Traditional APIs already exist
+- Sometimes simple solutions are better
+-->
+
+---
+transition: slide-left
+---
+
+# The Integration Problem
+
+<div v-click>
+
+> "AI doesn't have a capabilities problem—it has an integration problem."
+
+<div class="text-center mt-8">
+  <p class="text-2xl">— Fabric Project</p>
+</div>
+
+</div>
+
+
+<v-clicks>
+
+- AI works best in simple automation tasks
+- Integration into daily life is the challenge
+- Boil down to simple, easy tasks
+
+</v-clicks>
+
+<style>
+  blockquote {
+    font-size: 28px;
+    margin: 20px 0;
+  }
+  li {
+    font-size: 28px;
+  }
+</style>
+
+<!--
+- Fabric project gets it right
+- The problem isn't capability
+- It's making AI actually useful in practice
+-->
+
+---
+transition: slide-up
+layout: statement
+---
+
+Work together, not against each other.
+
+<style>
+  p {
+    font-size: 40px;
+  }
+</style>
+
+<!--
+- Technology should serve users
+- Not force users to adapt to technology
+- Collaboration over hype
+-->
