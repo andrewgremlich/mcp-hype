@@ -22,10 +22,8 @@ Sorry, this presentation isn't going to go with all the hype.
   </a>
 </div>
 
-<QRCode urlToEncode="https://mcp-hype.gremlich.dev/" />
-
 <style>
-  #prezi-qrcode {
+  .qr-bottom-left {
     position: absolute;
     left: 30px;
     bottom: 30px;
@@ -229,7 +227,7 @@ transition: slide-left
 
 <v-clicks>
 
-- Even power users only use 10-20% of available features
+- As a power user, I don't use many features
 - Microsoft Word: hundreds of features, most widely unused
 - Google Docs wins with essential feature set
 - Usability > Feature count
@@ -303,6 +301,19 @@ transition: slide-left
 -->
 
 ---
+transition: slide-down
+---
+
+# Context Problem
+
+- Use MCPs too much, then context bloat risk.
+- Use LLMs for a secure system, risk prompt injection.
+
+<!--
+- Current events should show that non-deterministic results of an LLM __are risky__.
+-->
+
+---
 transition: slide-left
 ---
 
@@ -328,6 +339,34 @@ transition: slide-left
 - Hallucination risk remains
 - Trust issues require careful, incremental use
 -->
+
+---
+transition: slide-up
+---
+
+# Tooling Issues
+
+<v-clicks>
+
+- Configuration speed
+- Tool Reliability.
+
+<!--
+- I really don't see how one can argue that MCP setup is any faster tooling setup.
+- Take the whole context together.
+- At best, they shouldn't even be compared.
+- MCPs still rely on LLMs and that is not 100% reliable.
+- If you had a TV or a phone that worked 90% of the time, wouldn't you get frustrated?
+- Traditional tools have a higher usability rate.
+-->
+
+</v-clicks>
+
+---
+transition: slide-left
+---
+
+<!-- This is a weather script. -->
 
 ---
 transition: slide-up
@@ -398,7 +437,7 @@ transition: slide-left
 -->
 
 ---
-transition: slide-up
+transition: slide-left
 layout: statement
 ---
 
@@ -415,3 +454,24 @@ Work together, not against each other.
 - Not force users to adapt to technology
 - Collaboration over hype
 -->
+
+---
+
+<div class="text-center">
+
+# Read my blog for references and notes!
+
+<QRCode urlToEncode="https://www.gremlich.me/software-engineering/2025/mcp-reality-check/" />
+
+</div>
+
+<style>
+  .text-center {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
