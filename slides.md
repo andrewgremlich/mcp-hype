@@ -22,6 +22,16 @@ Sorry, this presentation isn't going to go with all the hype.
   </a>
 </div>
 
+<QRCode urlToEncode="https://mcp-hype.gremlich.dev/" />
+
+<style>
+  #prezi-qrcode {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+  }
+</style>
+
 <!--
 - I am not in favor of the hype surrounding MCP technology.
 - I do think it may be useful in some cases.

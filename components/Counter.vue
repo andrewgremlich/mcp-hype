@@ -1,15 +1,3 @@
-<script setup lang="ts">
-import { ref } from 'vue'
-
-const props = defineProps({
-  count: {
-    default: 0,
-  },
-})
-
-const counter = ref(props.count)
-</script>
-
 <template>
   <div flex="~" w="min" border="~ main rounded-md">
     <button
@@ -35,3 +23,15 @@ const counter = ref(props.count)
     </button>
   </div>
 </template>
+
+<script setup lang="ts">
+import { ref } from 'vue'
+
+const props = defineProps({
+  count: {
+    default: 0,
+  },
+})
+
+const counter = ref(props.count)
+</script>
