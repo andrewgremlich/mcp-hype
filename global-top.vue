@@ -1,5 +1,5 @@
 <template>
-    <Sound :sound-files="soundFiles" />
+    <SoundSlideChange :sound-files="soundFiles" />
 </template>
 
 <script setup lang="ts">
