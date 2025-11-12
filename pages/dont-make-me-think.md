@@ -6,8 +6,6 @@ image: https://kagi.com/proxy/617rPny7-LL._AC_UF1000,1000_QL80_.jpg?c=CXPfL3-Fqy
 
 # Don't Make Me Think!
 
-<Sound />
-
 <v-clicks>
 
 - Remember this book?

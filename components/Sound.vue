@@ -1,25 +1,43 @@
 <template>
   <div>
-    <button @click="playSound">
+    <button @click="playRandomSound">
       +
     </button>
   </div>
 </template>
 
 <script setup lang="ts">
-import { watch } from 'vue'
+import { watch, ref } from 'vue'
 import { useSound } from '@vueuse/sound'
 import { useNav } from '@slidev/client'
-import buttonSfx from '/slide-whistle-up.mp3?url'
 
-const { play } = useSound(buttonSfx)
+const props = defineProps<{
+  soundFiles: string[]
+}>()
+
 const { currentPage } = useNav()
 
-watch(currentPage, () => {
-  play()
+// Create sound instances for all files
+const soundInstances = ref<Record<string, any>>({})
+
+// Initialize all sound instances
+props.soundFiles.forEach(file => {
+  const { play } = useSound(file)
+  soundInstances.value[file] = play
 })
 
-const playSound = () => {
-  play()
+const getRandomSound = () => {
+  const randomIndex = Math.floor(Math.random() * props.soundFiles.length)
+  const randomFile = props.soundFiles[randomIndex]
+  return soundInstances.value[randomFile]
 }
+
+const playRandomSound = () => {
+  const randomPlay = getRandomSound()
+  randomPlay()
+}
+
+watch(currentPage, () => {
+  playRandomSound()
+})
 </script>
