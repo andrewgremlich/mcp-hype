@@ -34,9 +34,9 @@ transition: slide-up
 
 <v-clicks>
 
-- Disillusioned.
+- Disillusioned with LLMs
 - Usability includes what problem it solves.
-- Hype mostly just inflates value.
+- MCPs seems just as useful as any other tech.
 
 </v-clicks>
 
@@ -113,6 +113,8 @@ transition: slide-up
 
 - MCP extend LLM capability.
 - MCP will probably not be for a normal user.
+- Instead, they are for a power user.
+- That is why software engineers like it so much.
 
 </v-clicks>
 
@@ -133,18 +135,31 @@ transition: slide-up
 
 ---
 transition: slide-up
-layout: statement
+layout: image-right
+image: https://res.cloudinary.com/dyg0mcshg/image/upload/q_auto,f_auto/blog/wizard_talking_with_bot_yrw0mo
 ---
 
-This seems like a fancy way to talk to an LLM...
+<div class="centered">
+  <p>This seems like a fancy way to talk to an LLM...</p>
+</div>
 
-<style>
+<style scoped>
   p {
-    font-size: 40px;
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .centered {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 </style>
 
 <!--
+- There is such a thing as UI/UX design.
+- In my experience, business people don't appreciate designers as they should.
 - Chat should be complementary, not primary
 - Too many features = poor UX
 - AI winners have focused solutions
@@ -183,6 +198,28 @@ transition: slide-left
 - Users need obvious features, not hidden ones
 - Chatbots make users guess what's possible
 -->
+
+---
+transition: slide-left
+layout: image-right
+image: https://m.media-amazon.com/images/I/71wm29Etl4L._AC_UF1000,1000_QL80_.jpg
+---
+
+# The Power of Habit
+
+<v-clicks>
+
+- Humans are efficient creatures.
+- Thinking is costly.
+- This is why habits form.
+
+</v-clicks>
+
+<style>
+  li {
+    font-size: 30px;
+  }
+</style>
 
 ---
 transition: slide-left
@@ -250,6 +287,7 @@ transition: slide-up
 - Non-deterministic results
 - Too many demos require negotiating with the chatbot
 - Demos should encourage use, not caution
+- Expectation mismatch
 
 </v-clicks>
 
@@ -293,13 +331,23 @@ transition: slide-left
 -->
 
 ---
-transition: slide-down
+transition: slide-up
 ---
 
 # Context Problem
 
+<v-clicks>
+
 - Use MCPs too much, then context bloat risk.
 - Use LLMs for a secure system, risk prompt injection.
+
+</v-clicks>
+
+<style>
+  li {
+    font-size: 30px;
+  }
+</style>
 
 <!--
 - Current events should show that non-deterministic results of an LLM __are risky__.
@@ -343,6 +391,14 @@ transition: slide-up
 - Configuration speed
 - Tool Reliability.
 
+</v-clicks>
+
+<style>
+  li {
+    font-size: 30px;
+  }
+</style>
+
 <!--
 - I really don't see how one can argue that MCP setup is any faster tooling setup.
 - Take the whole context together.
@@ -352,13 +408,15 @@ transition: slide-up
 - Traditional tools have a higher usability rate.
 -->
 
-</v-clicks>
+---
+src: ./pages/tooling-comparison-1.md
+hide: false
+---
 
 ---
-transition: slide-left
+src: ./pages/tooling-comparison-2.md
+hide: false
 ---
-
-<!-- This is a weather script. -->
 
 ---
 transition: slide-up

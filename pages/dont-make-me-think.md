@@ -31,5 +31,7 @@ image: https://kagi.com/proxy/617rPny7-LL._AC_UF1000,1000_QL80_.jpg?c=CXPfL3-Fqy
 
 <!--
 - I read this book in BYU-Idaho.
+- Amazon profile information.
+- Infinite scroll technology
 - Humans conserve energy.
 -->
